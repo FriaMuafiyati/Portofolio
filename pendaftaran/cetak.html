@@ -1,0 +1,123 @@
+<html>
+    <body>
+        <table>
+            <tr>
+                <td rowspan="3" width="150" align="center"><img src="logopnc.jpeg" width="100"></td>
+                <td width="500"><b>POLITEKNIK NEGERI CILACAP</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td >KARTU PESERTA PMB ONLINE</td>
+                <td>22-0132-442-0023</td>
+            </tr>
+            <tr>
+                <td>TA 2022/2023</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3"><hr/></td>
+            </tr>
+
+            <tr>
+                <table border="1">
+                    <tr>
+                        <td rowspan="6" width="150" align="center"><img src="2.jpeg" width="150"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td width="200">Nama</td>
+                        <td width="400">
+                            <span id="cetakNama"></span>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>NIK</td>
+                        <span id="cetakNIK"></span>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Tempat/Tanggl Lahir</td>
+                        <span id="cetaktanggallahir"></span>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <span id="cetakjeniskelamin"></span>
+                        <td></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Nomor Peserta</td>
+                        <td>22-0132-442-0023</td>
+                       
+                    </tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <span id="cetakalamat"></span>
+                        <td colspan="2"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Tanggal Pendaftaran</td>
+                        <td colspan="2">13 Februari 2022</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Program Keahlian</td>
+                        <td colspan="2"></td>
+                        <span id="cetakstudi"></span>
+                       
+                    </tr>
+                    <tr>
+                        <td>Asal Sekolah</td>
+                        <td colspan="2"></td>
+                        <span id="cetaksekolah"></span>
+                       
+                    </tr>
+                    <tr>
+                        <td>Status Sekolah</td>
+                        <td colspan="2"></td>
+                        <span id="cetakstatus"></span>
+                       
+                    </tr>
+                    <tr>
+                        <td>Informasi Lain</td>
+                        <td colspan="2"> </td>
+                        <span id="cetakinformasi"></span>
+                    </tr>
+                </table>
+            </tr>
+        </table>
+        <td > 
+            <br >
+            <button style="background-color: rgb(58, 218, 76);">Cetak</button>
+        </td>       
+        
+        <script>
+
+    const Nama=localStorage.getItem('cetakNama');
+    const NIK=localStorage.getItem('nik');
+    const TanggalLahir=localStorage.getItem('tanggallahir');
+    const JenisKelamin=localStorage.getItem('jeniskelamin');
+    const Alamat=localStorage.getItem('alamat');
+    const Studi=localStorage.getItem('studi');
+    const Sekolah=localStorage.getItem('sekolah');
+    const Status=localStorage.getItem('status');
+    const Informasi=dlocalStorage.getItem('informasi');
+
+    document.getElementById('cetakNama').textContent=Nama;
+    document.getElementById('nik').textContent=NIK;
+    document.getElementById('tanggallahir').textContent=TanggalLahir;
+    document.getElementById('jeniskelamin').textContent=JenisKelamin;
+    document.getElementById('alamat').textContent=Alamat;
+    document.getElementById('studi').textContent=Studi;
+    document.getElementById('sekolah').textContent=Sekolah;
+    document.getElementById('status').textContent=Status;
+    document.getElementById('informasi').textContent=Informasi;
+        </script>
+
+    </body>
+</html>
+<!--Fria Nurul Muafiyati-->
+<!--TI 2C-->
